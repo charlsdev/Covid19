@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* @import url('poppins/css/Poppins_LT.css'); */
+@import url('../plugins/Poppins_letter.css');
+
+body {
+	width: 100%;
+   height: 100%;
+	background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   color: #000000;
+   /* color: #ffffff; */
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	color: #9c9c9c;
+}
+
+#a{
+   margin-left: 25px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5rem;
+   transition: .3s;
+   text-transform: uppercase;
+   /* -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-shadow:   
+               0 0 0px rgba(255, 255, 255, 0.1),
+               0 6px 3px rgba(255, 255, 255, .3),
+               0 12px 6px rgba(255, 255, 255, .2),
+               0 18px 18px rgba(255, 255, 255, .4); */
+}
+
+#img_logo {
+   margin-left: 25px;
+	width: 125px; 
+	height: 70px;
+}
+
+nav{
+	padding: 3px;
+	transition: 2s;
+	box-shadow: 0px 0px 0px #CCCCCC, 0px 0px 15px #4169e1;
+}
+
+h3 {
+   font-size: 35px;
+   text-align: center;
+   color: #000; 
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-shadow:   
+                  0 0 0px rgba(0,0,0,.1),
+                  0 6px 3px rgba(0,0,0,.3),
+                  0 12px 6px rgba(0,0,0,.2),
+                  0 18px 18px rgba(0,0,0,.4);
+}
+
+h1, h2, h3, h4, h5, h6, label, input {
+   color: #000;
+}
+
+label {
+   margin-left: 5px;
+}
+
+#logoQC {
+   height: 210;
+}
+
+#QC {
+   font-size: 2rem;
+}
+
+#Jipijapa {
+   height: 80px;
+   width: 60px;
+}
+
+#COPY {
+   margin-left: 150px;
+   margin-right: 150px;
+   vertical-align: middle;
+   display: inline-block; 
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-shadow:   
+                  0 0 0px rgba(0, 0, 0, .1),
+                  0 6px 3px rgba(0, 0, 0, .3),
+                  0 12px 6px rgba(243, 237, 237, .2),
+                  0 18px 18px rgba(0, 0, 0, .4);
+}
+
+#TI {
+   height: 85px;
+   width: 80px;
+}
+
+#BTN {
+   text-decoration: none;
+   transition: 0.5s;
+   overflow: hidden;
+   /* text-transform: uppercase; */
+   -webkit-box-reflect: below 3px linear-gradient(transparent, #0003);
+}
+
+#BTN:nth-child(1) {
+   filter: hue-rotate(115deg);
+}
+
+#BTN:hover {
+   background: #a17fe0;
+   color: #fff;
+   box-shadow: 0 0 10px #a17fe0;
+   transition-delay: 0.5s;
+}
+
+#BTN::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 30px;
+   height: 15px;
+   border-top: 3px solid #a17fe0;
+   border-left: 3px solid #a17fe0;
+   transition: 0.5s;
+   transition-delay: 0.5s;
+}
+
+#BTN:hover::before {
+   width: 100%;
+   height: 100%;
+   transition-delay: 0s;
+}
+
+#BTN::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 30px;
+   height: 15px;
+   border-bottom: 3px solid #a17fe0;
+   border-right: 3px solid #a17fe0;
+   transition: 0.5s;
+   transition-delay: 0.5s;
+}
+
+#BTN:hover::after {
+   width: 100%;
+   height: 100%;
+   transition-delay: 0s;
+}
+
+@media only screen and (max-width: 700px){
+	#img_logo {
+      margin-left: 5px;
+   }
+
+   #a{
+      margin-left: 5px;
+      text-align: center;
+      color: #fff;
+      font-size: 1rem;
+      transition: .3s;
+      text-transform: uppercase;
+   }
+
+   #COPY {
+      font-size: 0.9rem;
+      margin-left: 80px;
+      margin-right: 80px;
+   }
+   
+}
+
+@media only screen and (max-width: 500px){
+   h3 {
+      font-size: 32px;
+   }
+
+   #a{
+      margin-left: 5px;
+      text-align: center;
+      color: #fff;
+      font-size: 0.8rem;
+      transition: .3s;
+      text-transform: uppercase;
+   }
+
+   #logoQC {
+      height: 180;
+   }
+
+   #Jipijapa {
+      height: 70px;
+      width: 50px;
+   }
+
+   #COPY {
+      font-size: 0.8rem;
+      margin-left: 15px;
+      margin-right: 15px;
+   }
+
+   #TI {
+      height: 75px;
+      width: 70px;
+   }
+   
+}
