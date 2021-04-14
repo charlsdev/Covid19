@@ -1,6 +1,8 @@
 # Covid19
 Proyecto para conocer la situación del Covid19 en la Ciudad de Jipijapa...
 
+![](img/QuedateEnCasa.png)
+
 # Pagina de Inicio
 Pagina de inicio y bienvenida para el usuario
 
